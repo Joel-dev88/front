@@ -6,4 +6,4 @@ before_install:
   - docker build -t jrodriguez10388/front -f Dockerfile.dev .
 
 script:
-  - docker run -t jrodriguez10388/front npm run test -- --coverage
+  - docker run jrodriguez10388/front npm run test -- --coverage
