@@ -5,6 +5,7 @@ services:
 before_install:
   - docker build -t jrodriguez10388/front -f Dockerfile.dev .
 
+
 script:
   - docker run -e CI=true jrodriguez10388/front npm run test
 
